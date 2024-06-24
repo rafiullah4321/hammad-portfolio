@@ -1,282 +1,283 @@
-.first{
-    background-color: #fff;
-    border-radius: 450px;
-    margin-bottom: 120px;
-    
+.first {
+  background-color: #fff;
+  border-radius: 450px;
+  margin-bottom: 120px;
 }
-.navbar{
-    background-color: #fff;
-    color: black;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    position: fixed;
-    top: 0;
+.navbar {
+  background-color: #fff;
+  color: black;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  position: fixed;
+  top: 0;
 }
-.nav-item:active{
-    text-decoration: line-through;
+.nav-item:active {
+  text-decoration: line-through;
 }
-.hero{
-    padding-top: 30px;
+.hero {
+  padding-top: 30px;
 }
-.hero-pic img{
-    height: 120px;
-    width: 120px;
+.hero-pic img {
+  height: 120px;
+  width: 120px;
 }
-.hero-h1{
-    font-size: 3.5rem !important;
-    padding-top: 30px;
-    margin-bottom: 30px;
+.hero-h1 {
+  font-size: 3.5rem !important;
+  padding-top: 30px;
+  margin-bottom: 30px;
 }
-.hero-p{
-    font-size: 1.3rem !important;
+.hero-p {
+  font-size: 1.3rem !important;
 }
-.icons{
-    margin-bottom: 50px;
-    margin-top: 50px;
+.icons {
+  margin-bottom: 50px;
+  margin-top: 50px;
 }
-.social-icons{
-    height: 40px;
-    width: 40px;
-    text-align: center;
-    border: 1px solid;
-    border-radius: 50%;
-    .fa-brands{
-        margin-top: 10px;
-    }
+.social-icons {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  border: 1px solid;
+  border-radius: 50%;
+  .fa-brands {
+    margin-top: 10px;
+  }
 }
-.social-icons:hover{
-    background-color: black;
-    color: wheat;
+.social-icons:hover {
+  background-color: black;
+  color: wheat;
 }
 
-#carousel-1576221792454 > div.owl-nav{
-    display: none;
+#carousel-1576221792454 > div.owl-nav {
+  display: none;
 }
-#carousel-1576221792454 > div.owl-dots{
-    display: none;
+#carousel-1576221792454 > div.owl-dots {
+  display: none;
 }
-.banners-carousel{
-    margin-bottom: 50px;
+.banners-carousel {
+  margin-bottom: 50px;
 }
 /* ---------------------second------------------- */
-.second{
-    background-color: rgb(235, 235, 235);
+.second {
+  background-color: rgb(235, 235, 235);
 }
-.projects{
-    padding-top: 90px;
-    padding-bottom: 100px;
+.projects {
+  padding-top: 90px;
+  padding-bottom: 100px;
 }
-.project-h1{
-    font-size: 4rem;
+.project-h1 {
+  font-size: 4rem;
 }
-.project-p{
-    font-size: 1.5rem;
-    margin-top: 20px;
-    margin-bottom: 20px;
+.project-p {
+  font-size: 1.5rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
-.project-hover{
-    .btn{
-       opacity: 0;
-        text-decoration: none;
-        color: black;
-    }
-    img{
-        opacity: 0.5;
-    }
-}
-
-.project-hover:hover{
-    img{
-        opacity: 2;
-    }
-    .btn{
-       opacity: 1;
-    }
-}
-.see-all{
-    margin-top: 50px;
-    padding: 5px 40px 5px 40px !important;
-    background-color: #fff !important;
-    color: black !important;
-    border: none !important;
-}
-.see-all:hover{
-    background-color: black !important;
-    color: white !important;
-
+.project-hover {
+  position: relative;
+  overflow: hidden;
+  .btn {
+    opacity: 0;
+    text-decoration: none;
+    color: black;
+    overflow: hidden;
+  }
+  a{
+    text-decoration: none;
+    color: rgb(30, 30, 30);
+  }
 }
 
+.project-image {
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 aspect ratio */
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  transition: background-size 1s ease;
+  height: 400px;
+}
 
+.project-hover:hover .project-image {
+  background-size: 120%;
+}
+
+.project-hover:hover {
+  .btn {
+    opacity: 1;
+  }
+}
+.see-all {
+  margin-top: 50px;
+  padding: 5px 40px 5px 40px !important;
+  background-color: #fff !important;
+  color: black !important;
+  border: none !important;
+}
+.see-all:hover {
+  background-color: black !important;
+  color: white !important;
+}
 
 /* ----------------------------law firm--------third------------ */
 
-.law-firm{
-background-color: black;
-color: #fff;
+.law-firm {
+  background-color: black;
+  color: #fff;
 }
-.law-firm-txt{
-   margin-left: 90px;
-   padding-top: 120px;
+.law-firm-txt {
+  margin-left: 90px;
+  padding-top: 120px;
 }
-body > div.container-fluid.law-firm > div > div > div:nth-child(2) > img{
-    margin-left: 12px;
-    height: 100%;
+body > div.container-fluid.law-firm > div > div > div:nth-child(2) > img {
+  margin-left: 12px;
+  height: 100%;
 }
 
 /* -------------------expert-feedback----------fourth----------- */
 
-.expert-feedback{
-    padding-top: 120px;
-    padding-bottom: 100px;
-    background-color: rgb(235, 235, 235);
+.expert-feedback {
+  padding-top: 120px;
+  padding-bottom: 100px;
+  background-color: rgb(235, 235, 235);
 }
-
-
 
 /* ---------------testimonial------------------ */
 
-.testimonial{
-    margin-top: 50px;
+.testimonial {
+  margin-top: 50px;
 }
-.testimonial-inner{
-    background-color: #fff;
-    padding: 40px;
-    border-radius: 30px;
+.testimonial-inner {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 30px;
 }
-.testimonial-avatar-image{
-    width: 120px !important;
-    height: 120px;
-    border-radius: 50%;
+.testimonial-avatar-image {
+  width: 120px !important;
+  height: 120px;
+  border-radius: 50%;
 }
-.owl-prev span,.owl-next span{
-    display: block;
-    width: 50px;
-    height: 50px;
-    background-color: #fff;
-    text-align: center;
-    font-size: 30px;
-    border-radius: 10px;
-    margin-left: 10px;
+.owl-prev span,
+.owl-next span {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  text-align: center;
+  font-size: 30px;
+  border-radius: 10px;
+  margin-left: 10px;
 }
-
-
 
 /* --------------------connecting------------ */
 
-.connecting{
-    background-color: rgb(31, 31, 31);
-    color: white;
-    padding: 100px;
+.connecting {
+  background-color: rgb(31, 31, 31);
+  color: white;
+  padding: 100px;
 }
-.connecting-button{
-    background-color: rgb(42, 42, 40) !important;
-    border: none !important;
-    padding: 5px 30px 5px 30px !important;
+.connecting-button {
+  background-color: rgb(42, 42, 40) !important;
+  border: none !important;
+  padding: 5px 30px 5px 30px !important;
 }
 
 /* --------------------footer--------------- */
 
-.footer{
-    background-color: black;
+.footer {
+  background-color: black;
+  color: #fff;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  a {
+    text-decoration: none;
+    color: #afafac;
+  }
+  a:hover {
     color: #fff;
-    padding-top: 80px;
-    padding-bottom: 80px;
-    a{
-        text-decoration: none;
-        color: #afafac;
-    }
-    a:hover{
-        color: #fff;
-    }
+  }
 }
-
-
 
 /* ---------------------Resume page---------------------- */
 
-.resume-back{
-    background-color: rgb(235, 235, 235);
+.resume-back {
+  background-color: rgb(235, 235, 235);
 }
-.resume>div{
-   padding: 60px;
+.resume > div {
+  padding: 60px;
 }
-body > div.container-fluid.resume-back-1 > div > div > div:nth-child(1) > h1{
-    font-size: 60px;
+body > div.container-fluid.resume-back-1 > div > div > div:nth-child(1) > h1 {
+  font-size: 60px;
 }
-body > div.container-fluid.resume-back-1 > div > div > div:nth-child(2) > p{
-    font-size: 30px;
+body > div.container-fluid.resume-back-1 > div > div > div:nth-child(2) > p {
+  font-size: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.resume-back-1 {
+  border-radius: 50px;
+  position: relative;
+  top: 40px;
+  z-index: 11;
+  background-color: #fff;
+}
+
+.resume-detail {
+  padding-top: 50px;
+  ul {
     margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.resume-back-1{
-    border-radius: 50px;
-    position: relative;
-    top: 40px;
-    z-index: 11;
-    background-color: #fff;
-}
-
-.resume-detail{
-    padding-top: 50px;
-    ul{
-        margin-top: 20px;
-        li{
-            font-size: 20px;
-            margin-bottom: 10px;
-            span{
-                font-weight: 700;
-            }
-        }
+    li {
+      font-size: 20px;
+      margin-bottom: 10px;
+      span {
+        font-weight: 700;
+      }
     }
+  }
 }
-
 
 /* ------------------------about page------------------- */
 
-.about-back{
-    background-color: rgb(235, 235, 235);
-    padding-top: 120px;
-    padding-bottom: 150px;
+.about-back {
+  background-color: rgb(235, 235, 235);
+  padding-top: 120px;
+  padding-bottom: 150px;
 }
-.about-back-1{
-    border-radius: 50px;
-    position: relative;
-    top: 30px;
-    z-index: 11;
-    background-color: #fff;
-    padding-bottom: 120px;
+.about-back-1 {
+  border-radius: 50px;
+  position: relative;
+  top: 30px;
+  z-index: 11;
+  background-color: #fff;
+  padding-bottom: 120px;
 }
-
-
-
-
 
 /* --------------------------media query-------------------- */
 
 @media only screen and (max-width: 600px) {
-   .hero-h1{
+  .hero-h1 {
     font-size: 36px !important;
-   }
-   body > div.container-fluid.law-firm > div > div > div:nth-child(2) > img{
+  }
+  body > div.container-fluid.law-firm > div > div > div:nth-child(2) > img {
     margin-right: 12px !important;
-}
-.law-firm-txt{
+  }
+  .law-firm-txt {
     margin-left: 30px !important;
     padding-top: 60px !important;
     padding-bottom: 20px !important;
- }
-
- /* ----------------resume----------------- */
-
- .resume>div{
-    padding: 25px !important;
- }
-
- body > div.container-fluid.resume-back-1 > div > div > div:nth-child(1) > h1{
-    font-size: 40px !important;
-}
-body > div.container-fluid.resume-back-1 > div > div > div:nth-child(2) > p{
-    font-size: 20px !important;
-}
   }
+
+  /* ----------------resume----------------- */
+
+  .resume > div {
+    padding: 25px !important;
+  }
+
+  body > div.container-fluid.resume-back-1 > div > div > div:nth-child(1) > h1 {
+    font-size: 40px !important;
+  }
+  body > div.container-fluid.resume-back-1 > div > div > div:nth-child(2) > p {
+    font-size: 20px !important;
+  }
+}

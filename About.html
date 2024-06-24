@@ -6,13 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About me</title>
 
-    <!-- -------------links------------------ -->
+  <!-- -------------links------------------ -->
 
-    <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+  <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
 
 </head>
 
@@ -74,11 +86,11 @@
             </div>
 
             <div class="row">
-                <div class="col">
+                <div class="col-12 col-sm-6">
                     <p>Inspiration strikes me in the quiet moments — during early morning jogs along the Thames Path,
                         while exploring the latest exhibit at the Tate Modern.</p>
                 </div>
-                <div class="col">
+                <div class="col-12 col-sm-6">
                     <p>I'm an avid photographer, capturing life's unplanned moments, and a sci-fi enthusiast, always
                         intrigued by the blend of technology and human imagination.</p>
                 </div>
@@ -87,7 +99,32 @@
             <!-- --------------------------carosoul--------------- -->
 
 
-
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                   <img src="images/carousel1.avif" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/carousel2.avif" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="..." class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
 
 
 
@@ -99,12 +136,12 @@
             </div>
 
             <div class="row">
-                <div class="col">
+                <div class="col-12 col-sm-6">
                     <p>As I immerse deeper into the world of UX/UI design, I'm particularly excited about the potential
                         of integrating sustainable practices into digital design, thereby embedding a layer of
                         environmental responsibility directly into the user experience.</p>
                 </div>
-                <div class="col">
+                <div class="col-12 col-sm-6">
                     <p>I dream of contributing to projects that not only look good but also do good — for people and the
                         planet. I'm also keen on exploring how AI can further personalize user experiences without
                         losing the human touch.</p>
@@ -167,6 +204,10 @@
         </div>
       </footer>
       
+       <!-- -------------------------javascript----------------------------- -->
+
+  <script src="js/custom.js"></script>
+
 </body>
 
 </html>
