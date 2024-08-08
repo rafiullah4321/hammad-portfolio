@@ -49,45 +49,4 @@ $(document).ready(function(){
 // -----------------------banners Carousel---------------
 
 
-$(document).ready(function () {
-  var owl = $('.banners-carousel-wrapper');
-
-  owl.owlCarousel({
-    items: 3, // Show 3 items per slide
-    loop: true,
-    margin: 50,
-    autoplay: true, // Enable autoplay
-    autoplayTimeout: 1000, // Very short interval for continuous movement
-    autoplaySpeed: 500, // Autoplay speed in milliseconds (4 seconds)
-    smartSpeed: 1, // Smooth transition speed (2 seconds)
-    responsiveClass: true,
-    responsive: {
-      0: {
-        items: 1, // Show 1 item per slide on mobile
-        nav: true
-      },
-      800: {
-        items: 2, // Show 2 items per slide on tablets
-        nav: false
-      },
-      992: {
-        items: 3, // Show 3 items per slide on laptops
-        nav: false,
-        loop: true
-      }
-    }
-  });
-
-  // Adjust speed on hover
-  owl.on('mouseover', function () {
-      owl.trigger('stop.owl.autoplay'); // Stop autoplay
-      owl.trigger('play.owl.autoplay', [2000]); // Slow down autoplay speed
-  });
-
-  owl.on('mouseout', function () {
-      owl.trigger('stop.owl.autoplay'); // Stop autoplay
-      owl.trigger('play.owl.autoplay', [1000]); // Resume continuous autoplay speed
-  });
-});
-
     

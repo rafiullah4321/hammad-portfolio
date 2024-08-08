@@ -59,18 +59,17 @@
     <div class="container hero">
       <div class="row ml-20">
         <div class="col-3 hero-pic">
-          <img class="rounded-circle border" src="images/hero.png" alt="">
+         <img class="rounded-circle border" src="images/hero.PNG" alt="">
         </div>
       </div>
       <div class="row">
-        <h1 class="hero-h1">Its Muhammad Hassan👋, a UX/UI designer. 7+ years creating user-friendly interfaces in Figma
-          & Adobe Suits✨
+        <h1 class="hero-h1">Its Muhammad Hammad👋, a UX/UI 
+          designer. 2 years creating user-friendly 
+          interfaces in Figma & Adobe Suits✨
         </h1>
       </div>
       <div class="row">
-        <p class="hero-p">Leveraging insights in user psychology and aesthetics, my approach enhances functionality with
-          visual elegance,
-          further enriching the sleek, user-friendly mobile apps I specialize in.</p>
+        <p class="hero-p">My approach transforms complex functionalities into visually stunning and intuitive mobile apps, delivering seamless and delightful user experiences."</p>
       </div>
       <div class="row">
         <div class="icons d-flex gap-3">
@@ -451,6 +450,51 @@
   <!-- -------------------------javascript----------------------------- -->
 
   <script src="js/custom.js"></script>
+
+  <script>
+    
+$(document).ready(function () {
+  var owl = $('.banners-carousel-wrapper');
+
+  owl.owlCarousel({
+    items: 3, // Show 3 items per slide
+    loop: true,
+    margin: 50,
+    autoplay: true, // Enable autoplay
+    autoplayTimeout: 1000, // Very short interval for continuous movement
+    autoplaySpeed: 500, // Autoplay speed in milliseconds (4 seconds)
+    smartSpeed: 1, // Smooth transition speed (2 seconds)
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 1, // Show 1 item per slide on mobile
+        nav: true
+      },
+      800: {
+        items: 2, // Show 2 items per slide on tablets
+        nav: false
+      },
+      992: {
+        items: 3, // Show 3 items per slide on laptops
+        nav: false,
+        loop: true
+      }
+    }
+  });
+
+  // Adjust speed on hover
+  owl.on('mouseover', function () {
+      owl.trigger('stop.owl.autoplay'); // Stop autoplay
+      owl.trigger('play.owl.autoplay', [1000000]); // Slow down autoplay speed
+  });
+
+  owl.on('mouseout', function () {
+      owl.trigger('stop.owl.autoplay'); // Stop autoplay
+      owl.trigger('play.owl.autoplay', [1000]); // Resume continuous autoplay speed
+  });
+});
+
+  </script>
 
 
 </body>
